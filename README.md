@@ -25,7 +25,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Leader board <a name="about-project"></a>
+# 📖 Math Magicians <a name="about-project"></a>
 
 **Math Magicians**
 
