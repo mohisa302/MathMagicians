@@ -2,19 +2,29 @@ input {
   margin: 0;
   padding: 0;
   outline: none;
-  color: white;
+  color: black;
   font-size: x-large;
   font-weight: bold;
+  outline: none;
+  outline: none;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style:hidden;
+  border: 1px gray solid;
 }
 
 .row {
   display: flex;
+  row-gap: 0;
+  column-gap: 0;
 }
 
 .input-text {
-  background-color: rgb(180, 180, 180);
+  background-color: rgb(145, 144, 144);
   color: white;
-  width: 99%;
+  width: 100%;
+  height: 10vh;
   text-align: end;
 }
 
@@ -23,7 +33,7 @@ input {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  width: 50vw;
+  width: 40vw;
   flex-wrap: wrap;
   align-self: center;
 }
@@ -31,31 +41,33 @@ input {
 td {
   display: flex;
   width: 100%;
+  padding: 0;
 }
 
 .btn {
   display: flex;
   justify-content: center;
-  border: 2px blue solid;
-  background-color: rgb(73, 170, 234);
-  height: 100%;
+  background-color: rgb(218, 221, 223);
+  height: 6rem;
   flex-grow: 1;
 }
 
 .op {
-  background-color: orangered;
-  border: 2px rgb(156, 6, 6) solid;
+  background-color: rgb(238, 154, 69);
 }
 
 div {
   display: flex;
   justify-content: center;
-
   /* justify-content: flex-end; */
-  height: 100vh;
-  width: 100vw;
+  /* height: 80vh;
+  width: 100vw; */
 }
 
 .zero {
   width: 200%;
+}
+
+table {
+  margin: 0;
 }
