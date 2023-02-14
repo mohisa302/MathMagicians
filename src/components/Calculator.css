@@ -5,13 +5,10 @@ input {
   color: black;
   font-size: x-large;
   font-weight: bold;
-  outline: none;
-  outline: none;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: hidden;
-  border: 1px gray solid;
 }
 
 .row {
@@ -50,6 +47,7 @@ td {
   background-color: rgb(218, 221, 223);
   height: 6rem;
   flex-grow: 1;
+  border: 1px gray solid;
 }
 
 .op {
