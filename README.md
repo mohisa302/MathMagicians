@@ -25,7 +25,7 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Leader board <a name="about-project"></a>
+# 📖 Math Magicians <a name="about-project"></a>
 
 **Math Magicians**
 
@@ -44,12 +44,9 @@ A simple calculator with React
 
 ### Key Features <a name="key-features"></a>
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -76,7 +73,7 @@ To clone this repository to your desired folder, follow the steps below:
 
 ```sh
   cd my-folder
-  git clone 
+  git clone
 ```
 
 **Using GitHub Desktop app**
