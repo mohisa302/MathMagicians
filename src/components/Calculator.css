@@ -30,7 +30,7 @@ input {
 
 td {
   display: flex;
-  width: 100% ;
+  width: 100%;
 }
 
 .btn {
@@ -48,13 +48,14 @@ td {
 }
 
 div {
-    display: flex;
-    justify-content: center;
-    /* justify-content: flex-end; */
-    height: 100vh;
-    width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  /* justify-content: flex-end; */
+  height: 100vh;
+  width: 100vw;
 }
 
 .zero {
- width: 200%;
+  width: 200%;
 }
