@@ -1,0 +1,60 @@
+input {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  color: white;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+}
+
+.input-text {
+  background-color: rgb(180, 180, 180);
+  color: white;
+  width: 99%;
+  text-align: end;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  width: 50vw;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
+td {
+  display: flex;
+  width: 100% ;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  border: 2px blue solid;
+  background-color: rgb(73, 170, 234);
+  height: 100%;
+  flex-grow: 1;
+}
+
+.op {
+  background-color: orangered;
+  border: 2px rgb(156, 6, 6) solid;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    /* justify-content: flex-end; */
+    height: 100vh;
+    width: 100vw;
+}
+
+.zero {
+ width: 200%;
+}
