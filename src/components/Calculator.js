@@ -4,10 +4,9 @@ import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const [state, setState] = useState({ total: 0, next: null, operation: null });
+
   const clickLisetener = (event) => {
-    const buttonName = event.target.value;
-    const answer = calculate(state, buttonName);
-    setState(answer);
+    setState(calculate(state, event.target.value));
   };
   const { total, operation, next } = state;
   return (
