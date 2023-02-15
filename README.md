@@ -43,10 +43,15 @@ A simple calculator with React
 </ul>
 
 ### Key Features <a name="key-features"></a>
+- **Calculate operations**
+
+  - The website that calculates some mathmathical operations
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+[you can see the live demo through this link](https://https://mohisa302.github.io/MathMagicians/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,7 +85,7 @@ To clone this repository to your desired folder, follow the steps below:
 
 - Follow the steps below
 
-  - Visit this link ""
+  - Visit this link "https://github.com/mohisa302/MathMagicians.git"
   - Click the green button labelled "code"
   - Select the "Open with GitHub Desktop" option
   - After the GitHub Desktop add opens, click the "clone repo" button
