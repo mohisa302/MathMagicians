@@ -5,7 +5,7 @@ import Calculator from './components/Calculator';
 
 import calculate from './logic/calculate';
 import operate from './logic/operate';
-import Header from './components/Home'
+import Header from './components/Home';
 
 describe('Calculator', () => {
   const obj = { total: null, next: null, operation: null };
@@ -60,13 +60,13 @@ describe('Calculator', () => {
 
   test('Render Header component', () => {
     render(
-        <Header />
+      <Header />,
     );
   });
 
   test('Render nav component', () => {
     render(
-        <nav />
+      <nav />,
     );
   });
 });
