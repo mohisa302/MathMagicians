@@ -65,7 +65,7 @@ describe('Calculator', () => {
     expect(rend.toJSON()).toMatchSnapshot();
   });
 
-  test('Builds the snapchot of the Header component safely', () => {
+  it('Builds the snapchot of the Header component safely', () => {
     const rend = renderer.create(<BrowserRouter><Header /></BrowserRouter>);
     expect(rend.toJSON()).toMatchSnapshot();
   });
