@@ -6,15 +6,15 @@ import './styles/App.css';
 import Header from './components/Header';
 
 const App = () => (
-  <div className="pageContainer">
-    <BrowserRouter>
+  <BrowserRouter>
+    <div className="pageContainer">
       <Header />
       <Routes>
-        <Route path="MathMagicians/" element={<Home />} />
-        <Route path="MathMagicians/calculate" element={<Calculator />} />
-        <Route path="MathMagicians/quotes" element={<Quotes />} />
+        <Route path="/" element={<Home />} />
+        <Route path="calculate" element={<Calculator />} />
+        <Route path="quotes" element={<Quotes />} />
       </Routes>
-    </BrowserRouter>
-  </div>
+    </div>
+  </BrowserRouter>
 );
 export default App;
