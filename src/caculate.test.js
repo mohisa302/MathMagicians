@@ -4,6 +4,7 @@ import renderer from 'react-test-renderer';
 import Calculator from './components/Calculator';
 import {fireEvent } from '@testing-library/react'
 import calculate from './logic/calculate';
+import operate from './logic/operate';
 
 describe('Calculator', () => {
   it('renders Calculator component', () => {
@@ -45,5 +46,9 @@ describe('Calculator', () => {
   it('Return null object if it is AC', () => {
     const result = calculate(obj, 'AC');
     expect(result).toEqual({ total: null, next: null, operation: null });
+  });
+
+  it('Test for modulus operation', () => {
+    expect(operate(2, 5, '%')).toBe('2');
   });
 });
