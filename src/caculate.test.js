@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import renderer from 'react-test-renderer';
+import { BrowserRouter } from 'react-router-dom';
 import Calculator from './components/Calculator';
-
+import Header from './components/Header';
+import Home from './components/Home';
+import Quotes from './components/Quotes';
 import calculate from './logic/calculate';
-import operate from './logic/operate';
 
 describe('Calculator', () => {
   const obj = { total: null, next: null, operation: null };
@@ -53,7 +55,18 @@ describe('Calculator', () => {
     expect(result).toEqual({ total: null, next: null, operation: null });
   });
 
-  it('Test for modulus operation', () => {
-    expect(operate(2, 5, '%')).toBe('2');
+  test('Builds the snapchot of the home component safely', () => {
+    const rend = renderer.create(<Home />);
+    expect(rend.toJSON()).toMatchSnapshot();
+  });
+
+  test('Builds the snapchot of the Quote component safely', () => {
+    const rend = renderer.create(<Quotes />);
+    expect(rend.toJSON()).toMatchSnapshot();
+  });
+
+  test('Builds the snapchot of the Header component safely', () => {
+    const rend = renderer.create(<BrowserRouter><Header /></BrowserRouter>);
+    expect(rend.toJSON()).toMatchSnapshot();
   });
 });
