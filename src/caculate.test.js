@@ -1,12 +1,14 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import Calculator from './components/Calculator';
-import { fireEvent } from '@testing-library/react'
-import renderer from "react-test-renderer";
-import operate from './logic/operate'
+import {fireEvent } from '@testing-library/react'
+import calculate from './logic/calculate';
+import operate from './logic/operate';
 
 describe('Calculator', () => {
-
+  const obj = { total: null, next: null, operation: null };
+  
   it("Matches DOM Snapshot", () => {
     const domTree = renderer.create(<Calculator />).toJSON();
     expect(domTree).toMatchSnapshot();
@@ -37,4 +39,22 @@ describe('Calculator', () => {
     expect(eightBtn).toHaveValue('8');
   });  
 
+  test('Builds the snapchot of the Calculator component safely', () => {
+    const rend = renderer.create(<Calculator />);
+    expect(rend.toJSON()).toMatchSnapshot();
+  });
+  
+  test('Render Calculator component', () => {
+    render(<Calculator />);
+  });
+
+
+  it('Return null object if it is AC', () => {
+    const result = calculate(obj, 'AC');
+    expect(result).toEqual({ total: null, next: null, operation: null });
+  });
+
+  it('Test for modulus operation', () => {
+    expect(operate(2, 5, '%')).toBe('2');
+  });
 });
