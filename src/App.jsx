@@ -5,8 +5,6 @@ import Calculator from './components/Calculator';
 import './styles/App.css';
 import Header from './components/Header';
 
-/* import React, { useState } from 'react'; */
-/* <nav className={styles.nav}></nav> */
 const App = () => (
   <div className="pageContainer">
     <Header />
