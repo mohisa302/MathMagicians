@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
-
 import Calculator from './components/Calculator';
+import {fireEvent } from '@testing-library/react'
 
 describe('Calculator', () => {
   it('renders Calculator component', () => {
@@ -21,4 +21,11 @@ describe('Calculator', () => {
     const input = screen.getByTestId('input-cal-text');
     expect(input).toHaveTextContent('0');
   });
+    
+  it(`check aftre push number btn input change`, () => {
+    render(<Calculator />);
+    const eightBtn = screen.getByDisplayValue('8')
+    fireEvent.click(eightBtn);
+    expect(eightBtn).toHaveValue('8');
+  });  
 });
