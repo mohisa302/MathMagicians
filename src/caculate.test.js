@@ -1,7 +1,9 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import Calculator from './components/Calculator';
 import {fireEvent } from '@testing-library/react'
+import calculate from './logic/calculate';
 
 describe('Calculator', () => {
   it('renders Calculator component', () => {
@@ -28,4 +30,20 @@ describe('Calculator', () => {
     fireEvent.click(eightBtn);
     expect(eightBtn).toHaveValue('8');
   });  
+
+  test('Builds the snapchot of the Calculator component safely', () => {
+    const rend = renderer.create(<Calculator />);
+    expect(rend.toJSON()).toMatchSnapshot();
+  });
+  
+  test('Render Calculator component', () => {
+    render(<Calculator />);
+  });
+
+  const obj = { total: null, next: null, operation: null };
+
+  it('Return null object if it is AC', () => {
+    const result = calculate(obj, 'AC');
+    expect(result).toEqual({ total: null, next: null, operation: null });
+  });
 });
