@@ -6,15 +6,15 @@ const Header = () => (
     <header className={styles.header}>
       <h1>Math Magicians</h1>
       <nav>
-        <ul>
+        <ul className={styles.navLinks}>
           <li>
-            <Link to="/"> Home </Link>
+            <Link to="/"> Home |&nbsp;</Link>
           </li>
           <li>
-            <Link to="/calculate"> Home </Link>
+            <Link to="/calculate">Calculator |&nbsp;</Link>
           </li>
           <li>
-            <Link to="/quotes"> Quotes </Link>
+            <Link to="/quotes">  Quotes </Link>
           </li>
         </ul>
       </nav>

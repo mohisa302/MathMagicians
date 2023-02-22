@@ -58,17 +58,15 @@ td {
   background-color: rgb(238, 154, 69);
 }
 
-div {
-  display: flex;
-  justify-content: center;
-
-  /* justify-content: flex-end; */
-}
-
 .zero {
   width: 200%;
 }
 
 table {
   margin: 0;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
 }

@@ -8,7 +8,7 @@ import Header from './components/Header';
 /* import React, { useState } from 'react'; */
 /* <nav className={styles.nav}></nav> */
 const App = () => (
-  <div className="homecontainer">
+  <div className="pageContainer">
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />

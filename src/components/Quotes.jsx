@@ -1,10 +1,10 @@
 import React from 'react';
+import styles from '../styles/Quotes.module.css';
 
-export default function Quotes() {
-  return (
-    <h2 className="quotes">
-      Mathematices is not about numbers equtions or algorithms: it is about
-      undertanding William Paoul Thurston
-    </h2>
-  );
-}
+const Quotes = () => (
+  <h3 className={styles.quoteText}>
+    Mathematices is not about numbers equtions or algorithms: it is about
+    undertanding William Paoul Thurston
+  </h3>
+);
+export default Quotes;
