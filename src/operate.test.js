@@ -6,13 +6,23 @@ describe('Calculator', () => {
     expect(result).toBe('5');
   });
 
-  it('check operate subtrack functionality', () => {
+  it('check operate add functionality', () => {
     const result = operate(2, 3, '-');
     expect(result).toBe('-1');
   });
 
-  it('check operate devision functionality', () => {
+  it('check operate division functionality', () => {
     const result = operate(10, 2, '÷');
     expect(result).toBe('5');
+  });
+
+  it('check operate multiplication functionality', () => {
+    const result = operate(2, 2, 'x');
+    expect(result).toBe('4');
+  });
+
+  it('check operate odd number functionality', () => {
+    const result = operate(6, 2, '%');
+    expect(result).toBe('0');
   });
 });

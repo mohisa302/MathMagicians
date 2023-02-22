@@ -41,12 +41,12 @@ describe('Calculator', () => {
     expect(eightBtn).toHaveValue('8');
   });
 
-  test('Builds the snapchot of the Calculator component safely', () => {
+  it('Builds the snapchot of the Calculator component safely', () => {
     const rend = renderer.create(<Calculator />);
     expect(rend.toJSON()).toMatchSnapshot();
   });
 
-  test('Render Calculator component', () => {
+  it('Render Calculator component', () => {
     render(<Calculator />);
   });
 
@@ -55,12 +55,12 @@ describe('Calculator', () => {
     expect(result).toEqual({ total: null, next: null, operation: null });
   });
 
-  test('Builds the snapchot of the home component safely', () => {
+  it('Builds the snapchot of the home component safely', () => {
     const rend = renderer.create(<Home />);
     expect(rend.toJSON()).toMatchSnapshot();
   });
 
-  test('Builds the snapchot of the Quote component safely', () => {
+  it('Builds the snapchot of the Quote component safely', () => {
     const rend = renderer.create(<Quotes />);
     expect(rend.toJSON()).toMatchSnapshot();
   });
