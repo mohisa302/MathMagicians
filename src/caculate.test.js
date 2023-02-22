@@ -1,9 +1,17 @@
 import * as React from 'react';
 import { render, screen } from '@testing-library/react';
 import Calculator from './components/Calculator';
-import {fireEvent } from '@testing-library/react'
+import { fireEvent } from '@testing-library/react'
+import renderer from "react-test-renderer";
+import operate from './logic/operate'
 
 describe('Calculator', () => {
+
+  it("Matches DOM Snapshot", () => {
+    const domTree = renderer.create(<Calculator />).toJSON();
+    expect(domTree).toMatchSnapshot();
+  });
+
   it('renders Calculator component', () => {
     render(<Calculator />);
     const linkElement = screen.getByText(/do some math/i);
@@ -28,4 +36,5 @@ describe('Calculator', () => {
     fireEvent.click(eightBtn);
     expect(eightBtn).toHaveValue('8');
   });  
+
 });
