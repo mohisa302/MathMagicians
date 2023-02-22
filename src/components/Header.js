@@ -8,13 +8,13 @@ const Header = () => (
       <nav>
         <ul className={styles.navLinks}>
           <li>
-            <Link to="/"> Home |&nbsp;</Link>
+            <Link to="MathMagicians/"> Home |&nbsp;</Link>
           </li>
           <li>
-            <Link to="/calculate">Calculator |&nbsp;</Link>
+            <Link to="MathMagicians/calculate">Calculator |&nbsp;</Link>
           </li>
           <li>
-            <Link to="/quotes">  Quotes </Link>
+            <Link to="MathMagicians/quotes">  Quotes </Link>
           </li>
         </ul>
       </nav>

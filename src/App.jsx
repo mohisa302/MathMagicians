@@ -11,9 +11,9 @@ const App = () => (
   <div className="pageContainer">
     <Header />
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/calculate" element={<Calculator />} />
-      <Route path="/quotes" element={<Quotes />} />
+      <Route path="MathMagicians/" element={<Home />} />
+      <Route path="MathMagicians/calculate" element={<Calculator />} />
+      <Route path="MathMagicians/quotes" element={<Quotes />} />
     </Routes>
   </div>
 );
